@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CountDown from './component/CountDown';
+import CountDownTimer from './component/CountDownTimer';
 
 function App() {
   return (
     <div className="App">
-      <CountDown expireDate={new Date()} />
+      <CountDownTimer expireDate={new Date()} onTimerComplete={()=> console.log('33333') } />
     </div>
   );
 }
